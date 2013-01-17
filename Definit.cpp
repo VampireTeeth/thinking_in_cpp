@@ -16,17 +16,13 @@
  * =====================================================================================
  */
 
-#include <cstdio>
-#include <cstdlib>
+#include "Definit.h"
 using namespace std;
-
-class G{
-    int i;
-public:
-    G(int I);
-}
 
 G::G(int I){
     i = I;
 }
 
+int G::get(){
+	return i;
+}

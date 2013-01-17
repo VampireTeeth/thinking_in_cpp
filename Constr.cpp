@@ -1,16 +1,8 @@
 #include <cstdio>
+#include "Constr.h"
 using namespace std;
 
 
-class Tree
-{
-    int height;
-public:
-    Tree(int h);
-    ~Tree();
-    void grow(int years);
-    void printsize();
-};
 
 Tree::Tree(int h)
 {
@@ -30,12 +22,3 @@ void Tree::grow(int years){
 void Tree::printsize(){
     printf("Tree size: %d\n", height);
 }
-
-int main(){
-    Tree t(4);
-    t.printsize();
-    t.grow(5);
-    t.printsize();
-}
-
-
