@@ -60,6 +60,7 @@ const char* IceCream[] = {
         };
 
 const int ICsz = sizeof(IceCream) / sizeof(*IceCream);
+
 int main(){
     StringStack SS;
     for(int i = 0; i < ICsz; i++) {
