@@ -55,7 +55,7 @@ int Stash::count() {
 
 void Stash::inflate(int increase) {
 	void* v = realloc(storage, (increase+quantity) * size);
-	storage = v;
+	storage = (unsigned char*)v;
 	quantity += increase;
 }
 

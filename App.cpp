@@ -10,6 +10,7 @@
 #include "Constr.h"
 #include "Stack03.h"
 #include <cstdlib>
+#include "Constret.h"
 using namespace std;
 
 int main(){
@@ -34,11 +35,27 @@ int main(){
 		d = s.pop();
 	}
 	cout << "----------------Testing Stack03 End---------------" <<endl;
+	cout << "----------------Testing Constret Start---------------" <<endl;
+	X x = f6() = X(1);
+	cout << x.get() << endl;
+	x = f6();
+	x.modify();
+	cout << x.get() << endl;
+	x = f6();
+	f7(x);
+	cout << x.get() << endl;
+//	f5() = X(1);
+	x = f5();
+	f7(x);
+	cout << x.get() << endl;
+
+	cout << "----------------Testing Constret End---------------" <<endl;
 
 //	for(int i = 0; i < 5; i++) {
 //		int arr[10];
 //		for(int j = 0; j < 10;arr[j++]=0);
 //		cout << "Array address: " << &arr << endl;
 //	}
+
 }
 
