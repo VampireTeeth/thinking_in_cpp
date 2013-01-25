@@ -27,7 +27,9 @@ public:
   int age() const;
 };
 
+///Definitions for class Person
 Person::Person(const char* Name, int Age):Name(Name), Age(Age){}
+
 inline const char* Person::name() const{
   return Name;
 }
@@ -35,7 +37,7 @@ inline const char* Person::name() const{
 inline int Person::age() const {
   return Age;
 }
-
+///End of definition for class Person
 int main(){
   Person* p = new Person("Steven", 28);
   cout << p->age() << ", " << p->name() << endl;
